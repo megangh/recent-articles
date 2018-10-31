@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+/* ================================= 
+  Base Styles
+==================================== */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+	font-family: 'Lato', sans-serif;
+	color: #ffffff; 
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: bottom; 
+}
+
+a {
+	text-decoration: none;
+	color: #25a9ce; 
+}
+a :hover, a :focus {
+	color: #5372f0; 
+}
+
+.container {
+	margin: 0 auto;
+	width: 90%;
+	max-width: 1170px; 
+}
+
+
+/* ---- Header ---- */
+#main-header {
+	background: #ffffff;
+	padding: 0.85em 0; 
+}
+
+#main-header h1 {
+	color: #000000;
+	font-size: 4em;
+	margin: 0;
+}
+#main-header p {
+	color: #7a7a7d;
+}
+.gradient-line {
+	height: .5em;
+	width: 90%;
+	margin: 0 auto;
+	background-image: linear-gradient(left , #47c5e0 2%, #4d9be8 50%, #5372f0 98%);
+    background-image: -o-linear-gradient(left , #47c5e0 2%, #4d9be8 50%, #5372f0 98%);
+    background-image: -moz-linear-gradient(left , #47c5e0 2%, #4d9be8 50%, #5372f0 98%);
+    background-image: -webkit-linear-gradient(left , #47c5e0 2%, #4d9be8 50%, #5372f0 98%);
+    background-image: -ms-linear-gradient(left , #47c5e0 2%, #4d9be8 50%, #5372f0 98%);
+}
+
+#photos {
+	margin: 0 auto;
+	max-width: 1170px;
+	background: #ffffff;
+}
+
+
+#grid .card {  
+	position: relative;	
+	width: 50%;
+	background: #000000;
+} 
+
+#grid .card img {
+	z-index: -2;
+	opacity: .6;
+}
+
+#grid .card .card-info {
+	position: absolute;
+	width: 70%;
+	bottom: 3.5em;
+	left: 1.5em;
+	z-index: 1000;
+}
+
+#grid .card .card-info .card-info-topic {
+	font-size: .8em;
+	letter-spacing: .06em;
+	text-transform: uppercase;
+	margin-bottom: 1.6em;
+}
+
+#grid .card .card-info .card-info-title {
+	font-size: 1.75em;
+	font-weight: 700;
+	margin-bottom: 1.1em;
+}
+
+#grid .card .card-info .card-info-button a {
+	font-size: 1em;
+	font-weight: 700;
+	margin-bottom: .5em;
+	height: 50px;
+	align-items: center;
+	padding: 10px 20px;
+	background: #25a9ce;
+	border-radius: 1em;
+	color: #ffffff;
+	text-align: center;
+	-webkit-transition: background 0.4s;
+	-moz-transition: background 0.4s;
+	transition: background 0.4s;
+}
+#grid .card .card-info .card-info-button a:hover, #grid .card .card-info .card-info-button a:focus {
+  background: #5372f0; }
+
